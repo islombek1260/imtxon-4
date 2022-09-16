@@ -5,7 +5,6 @@
     margin: 0 auto;
     max-width: 830px;
     margin-bottom: 35px;
-
 }
 .service-item {
     max-width: 285px;
@@ -67,13 +66,9 @@
     width: 21px;
     height: 21px;
 }
-@include desktop-first(576px){
-    .service-item {
-        &:nth-child(5)::before {
-            content: "none";
-        }    
-        &:nth-child(6)::before {
-            content: "none";
-        }
+
+@include desktop-first(768px){
+    .service {
+        padding-bottom: 105px;
     }
 }

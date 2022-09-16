@@ -1,8 +1,10 @@
 .office{
     padding: 83px 0 165px 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .office-theme{
-    margin: 0 auto;
+    margin: 0 auto 66px;
     font-weight: 600;
     font-size: 25px;
     line-height: 187.5%;
@@ -11,22 +13,23 @@
 .office-box{
     margin: 0 auto;
     position: relative;
-    max-width: 935px;
+    padding: 0 135px;
 }
 .office-item-box{
     max-width: 545px;
 }
 .img-box{
     position: relative;
+    width: 90%;
     &::after{
         position: absolute;
         content: "";
         z-index: -1;
-        width: 100%;
-        height: 100%;
+        width: 196px;
+        height: 154px;
         top: -15%;
         right: -9%;
-        background-image: url(../../images/second-bg.svg);
+        background-image: url(../images/second-bg.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -43,32 +46,45 @@
 }
 
 @include desktop-first(992px){
+    .office{
+        padding: 48px 0 105px 0;
+    }
     .office-theme{
-        margin: 0 auto 66px;
+        padding: 0 40px;
     }
     .office-item-box{
         max-width: 400px;
     } 
+    .office-box{
+        padding: 0 95px;
+    }
     .img-box{
+        padding-bottom: 100px;
         &::after{
             position: absolute;
                 content: "";
-                z-index: -1;
-                width: 196px;
-                height: 154px;
-                top: -15%;
-                right: -9%;
-                background-image: url(../../images/second-bg.svg);
-                background-repeat: no-repeat;
-                background-size: cover;
+                width: 125px;
+                height: 102px;
             }
     }
-
 }
 @include desktop-first(768px){
     .office-item-box{
         margin: 0 auto;
         text-align: center;
+    }
+    .office-box{
+        padding: 0px;
+    }
+    .img-box{
+        &::after{
+            position: absolute;
+                content: "";
+                width: 102px;
+                height: 80px;
+                top: -12%;
+                right: -6%;
+            }
     }
 }
 
@@ -79,5 +95,13 @@
     .office-theme{
         font-size: 16px;
         line-height: 30px;
+    }
+    .img-box{
+        &::after{
+            position: absolute;
+                content: "";
+                width: 78px;
+                height: 62px;
+            }
     }
 }

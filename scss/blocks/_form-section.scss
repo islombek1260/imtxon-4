@@ -1,5 +1,5 @@
 .form-section{
-    padding: 148px 0;
+    padding: 0 0 148px;
 }
 .form-box{
     position: relative;
@@ -16,11 +16,15 @@
     right: 2%;
     background-color: #DC7000;
 }
+@include desktop-first(768px) {
+    .form-section{
+        padding: 0 0 70px;
+    }  
+}
 @include desktop-first(375px) {
     .form-input-btn {
         position: static;
         width: 100%;
         margin-top: 15px;
     }  
-
 }

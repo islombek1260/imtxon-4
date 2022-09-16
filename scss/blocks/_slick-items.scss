@@ -2,9 +2,39 @@
     padding: 70px 0 100px;
     position: relative;
 }
+.slick-main-theme {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 187.5%;
+    color: #222222;
+    margin-bottom: 32px;
+}
+.slick-theme-commit{
+    max-width: 545px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187.5%;
+    color: #525252;
+}
+.slick-theme{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 187.5%;
+}
+.slick-commit{
+    color: #525252;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 187.5%;
+}
 @include desktop-first(768px){
     .slick-items {
-        padding: 55px 0 140px;
+        padding: 55px 0 130px;
         position: relative;
-    } 
+    }
+    .slick-theme-commit{
+        margin-bottom: 10px;
+    }
 }
