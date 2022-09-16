@@ -152,4 +152,9 @@
     top: 85%;
     right: 10%;
   }
+}
+@media only screen and (max-width: 576px) {
+  .slik-item {
+    width: 300px;
+  }
 }/*# sourceMappingURL=slick.css.map */

@@ -1,7 +1,13 @@
 .our-project {
-    padding: 140px 0 200px;
+    padding: 140px 0 170px;
 }
 .grid-img {
     height: 223px;
     margin-bottom: 33px;
 }
+
+@media only screen and (max-width: 576px) {
+    .our-project {
+        padding: 60px 0 70px;
+    }
+  }

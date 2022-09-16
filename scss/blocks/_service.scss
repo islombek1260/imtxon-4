@@ -67,3 +67,13 @@
     width: 21px;
     height: 21px;
 }
+@include desktop-first(576px){
+    .service-item {
+        &:nth-child(5)::before {
+            content: "none";
+        }    
+        &:nth-child(6)::before {
+            content: "none";
+        }
+    }
+}
