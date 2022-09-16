@@ -1,0 +1,86 @@
+.hero{
+    position: relative;
+    padding: 128px 0 158px 0;
+    background-image: url(../images/hero-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(100%);
+}
+.hero-box{
+    max-width: 480px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 675px;
+        height: 590px;
+        top: -10%;
+        right: -140%;
+        background-image: url(../images/hero-img.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.digital{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 155%;
+    padding: 0 0 17px 0;
+}
+.main-theme{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 155%;
+    margin-bottom: 26px;
+}
+.hero-commit{
+    font-weight: 500;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+.get-more-bt{
+    color: white;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 15px 30px;
+}
+
+@include desktop-first(1200px){
+    .hero-box{
+        &::after{
+            width: 500px;
+            height: 450px;
+            top: 10%;
+            right: -105%;
+        }
+    }
+}
+
+@include desktop-first(992px){
+    .hero{
+        padding: 108px 0 108px 0;
+        background-image: url(../images/hero-bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: calc(0%) calc(100%);
+    }
+    .hero-box{
+        &::after{
+            content: none;
+        }
+    }
+}
+@include desktop-first(576px){
+    .hero-box{
+        padding: 0 38px;
+    }
+    .main-theme{
+        font-size: 34px;
+        line-height: 53px;
+    }
+    .hero-commit{
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 35px;
+    }
+}

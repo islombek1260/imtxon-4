@@ -1,0 +1,83 @@
+.office{
+    padding: 83px 0 165px 0;
+}
+.office-theme{
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 187.5%;
+    max-width: 830px;
+}
+.office-box{
+    margin: 0 auto;
+    position: relative;
+    max-width: 935px;
+}
+.office-item-box{
+    max-width: 545px;
+}
+.img-box{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        z-index: -1;
+        width: 196px;
+        height: 154px;
+        top: -15%;
+        right: -9%;
+        background-image: url(../../images/second-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.box-theme{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 187.5%;
+}
+.box-commit{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187.5%;
+}
+
+@include desktop-first(992px){
+    .office-theme{
+        margin: 0 auto 66px;
+    }
+    .office-item-box{
+        max-width: 400px;
+    } 
+    .img-box{
+        &::after{
+            position: absolute;
+                content: "";
+                z-index: -1;
+                width: 196px;
+                height: 154px;
+                top: -15%;
+                right: -9%;
+                background-image: url(../../images/second-bg.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    }
+
+}
+@include desktop-first(768px){
+    .office-item-box{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@include desktop-first(576px) {
+    .office{
+        padding: 48px 0 105px;
+    }
+    .office-theme{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

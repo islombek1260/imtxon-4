@@ -1,0 +1,10 @@
+.slick-items {
+    padding: 70px 0 100px;
+    position: relative;
+}
+@include desktop-first(768px){
+    .slick-items {
+        padding: 55px 0 140px;
+        position: relative;
+    } 
+}
