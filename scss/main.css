@@ -581,13 +581,14 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 155%;
-  padding: 0 0 17px 0;
+  padding-bottom: 17px;
 }
 
 .main-theme {
   font-weight: 700;
   font-size: 50px;
   line-height: 155%;
+  margin: 0;
   margin-bottom: 26px;
 }
 
@@ -645,6 +646,9 @@ body {
 @media only screen and (max-width: 576px) {
   .hero-box {
     padding: 0 38px;
+  }
+  .digital {
+    padding-bottom: 31px;
   }
   .main-theme {
     font-size: 34px;
@@ -881,6 +885,18 @@ body {
   padding-bottom: 135px;
 }
 
+.girls-theme {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.girls-commit {
+  font-size: 17px;
+  line-height: 25.5px;
+  color: #515151;
+}
+
 @media only screen and (max-width: 992px) {
   .tree-girls {
     padding-bottom: 100px;
@@ -890,10 +906,15 @@ body {
   .tree-girls {
     padding-bottom: 50px;
   }
+  .girls-commit {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 .slick-items {
   padding: 70px 0 100px;
   position: relative;
+  background-color: #F5F5F5;
 }
 
 .slick-main-theme {
@@ -940,8 +961,37 @@ body {
   padding: 0 0 148px;
 }
 
+.form-big-box {
+  padding: 50px 40px;
+}
+
 .form-box {
   position: relative;
+}
+
+.form-main-theme {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 187.5%;
+}
+
+.form-main-commit {
+  color: #525252;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 187.5%;
+}
+
+.form-theme {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.form-commit {
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 636px;
 }
 
 .form-input {
@@ -960,6 +1010,9 @@ body {
   .form-section {
     padding: 0 0 70px;
   }
+  .form-big-box {
+    padding: 23px 20px;
+  }
 }
 @media only screen and (max-width: 375px) {
   .form-input-btn {
@@ -967,4 +1020,17 @@ body {
     width: 100%;
     margin-top: 15px;
   }
+}
+.footer-commit {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 372px;
+}
+
+.footer-commit2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 186.3%;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

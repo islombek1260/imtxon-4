@@ -1,8 +1,32 @@
 .form-section{
     padding: 0 0 148px;
 }
+.form-big-box{
+    padding: 50px 40px;
+}
 .form-box{
     position: relative;
+}
+.form-main-theme{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 187.5%;
+}
+.form-main-commit{
+    color: #525252;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 187.5%;
+}
+.form-theme {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+}
+.form-commit{
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 636px;
 }
 
 .form-input {
@@ -20,6 +44,10 @@
     .form-section{
         padding: 0 0 70px;
     }  
+    .form-big-box{
+        padding: 23px 20px;
+    }
+
 }
 @include desktop-first(375px) {
     .form-input-btn {
